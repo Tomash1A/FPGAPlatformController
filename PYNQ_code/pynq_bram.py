@@ -103,7 +103,7 @@ _AMP_MEM_NAMES: dict[int, str] = {
     2: 'MT_1/bram_AMP_ctrl',
 }
 
-_VALID_CHANNELS = (1, 2, 3, 4)
+_VALID_CHANNELS = (1, 2)
 
 
 # ---------------------------------------------------------------------------
