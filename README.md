@@ -19,11 +19,15 @@ FPGAPlatformController/
 
 ## Block Design Documentation
 
-### [`docs/projectHW_wMT.pdf`](docs/projectHW_wMT.pdf)
+### Multi-Tone (MT) Design
 Block diagram of the **Multi-Tone (MT)** design. This variant uses external control signals (`ProfileAddr`, `AM_onoff`) driven from an Arduino via the P1 connector to select frequency profiles and gate the output. The ADC is put in sleep mode in this configuration, freeing the shared pins for external control.
 
-### [`docs/projectHW_wADC.pdf`](docs/projectHW_wADC.pdf)
+![MT Block Design](docs/projectHW_wMT.PNG)
+
+### ADC Input Design
 Block diagram of the **ADC input** design. This variant uses the same P1 connector pins as LVDS_25 ADC data inputs. The `adc_capture` module replaces the SelectIO wizard to support DDR capture across multiple I/O banks (Banks 13, 34, 35) using a BUFG-driven global clock.
+
+![ADC Block Design](docs/projectHW_wADC.PNG)
 
 ---
 
