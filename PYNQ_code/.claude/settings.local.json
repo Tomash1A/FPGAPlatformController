@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh --version)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\shtomer\\WIS_work\\WIP\\REV\\sim"
+    ]
+  }
+}
