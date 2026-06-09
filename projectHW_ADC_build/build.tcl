@@ -6,9 +6,10 @@
 # ---------------------------------------------------------------------------
 set origin_dir [file normalize [lindex $argv 0]]
 
-set design_name projectHW
-set part        xc7z020clg400-1
-set board       avnet.com:microzed_7020:part0:1.3
+set project_name projectHW_wADC
+set design_name  projectHW
+set part         xc7z020clg400-1
+set board        avnet.com:microzed_7020:part0:1.3
 
 # ---------------------------------------------------------------------------
 # Vivado version check
@@ -23,16 +24,16 @@ if { [string first $version_required $current_version] == -1 } {
 # ---------------------------------------------------------------------------
 # Clean up any previous failed run
 # ---------------------------------------------------------------------------
-set proj_dir "$origin_dir/$design_name"
+set proj_dir "$origin_dir/$project_name"
 if { [file exists $proj_dir] } {
     puts "INFO: Removing previous project at $proj_dir"
     file delete -force $proj_dir
 }
 
 # ---------------------------------------------------------------------------
-# Create project
+# Create project  (lives in <build_folder>/projectHW_wADC/)
 # ---------------------------------------------------------------------------
-create_project $design_name $proj_dir -part $part
+create_project $project_name $proj_dir -part $part
 
 set obj [current_project]
 if { [catch {set_property board_part $board $obj}] } {
@@ -117,7 +118,7 @@ source [file normalize "$origin_dir/projectHW_wADC.tcl"]
 make_wrapper -files [get_files ${design_name}.bd] -top
 
 set wrapper [file normalize \
-    "$origin_dir/${design_name}/${design_name}.srcs/sources_1/bd/${design_name}/hdl/${design_name}_wrapper.v"]
+    "$origin_dir/${project_name}/${project_name}.srcs/sources_1/bd/${design_name}/hdl/${design_name}_wrapper.v"]
 add_files -norecurse $wrapper
 
 set_property top ${design_name}_wrapper [get_filesets sources_1]
@@ -132,4 +133,4 @@ save_bd_design
 
 puts ""
 puts "INFO: Project '$design_name' (ADC variant) is ready."
-puts "INFO: Open $origin_dir/$design_name/${design_name}.xpr in Vivado and click Generate Bitstream."
+puts "INFO: Open $origin_dir/$project_name/${project_name}.xpr in Vivado and click Generate Bitstream."
