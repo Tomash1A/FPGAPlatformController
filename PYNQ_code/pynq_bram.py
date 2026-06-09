@@ -94,17 +94,13 @@ _BIT_DDS_EN     = 0x2   # counter_clr: HIGH freezes DDS while BRAM is written
 
 # Keys in ol.mem_dict  (names come from the Vivado block design)
 _FREQ_MEM_NAMES: dict[int, str] = {
-    1: 'MT_0/IQ32tones_w_bram/axi_bram_ctrl_0',   # MT hierarchy 1
-    2: 'MT_1/IQ32tones_w_bram/axi_bram_ctrl_0',   # MT hierarchy 2
-    3: 'MT_2/IQ32tones_w_bram/axi_bram_ctrl_0',   # MT hierarchy 3
-    4: 'MT_3/IQ32tones_w_bram/axi_bram_ctrl_0',   # MT hierarchy 4
+    1: 'MT_0/IQ32tones_w_bram/axi_bram_ctrl_0',
+    2: 'MT_1/IQ32tones_w_bram/axi_bram_ctrl_0',
 }
 
 _AMP_MEM_NAMES: dict[int, str] = {
-    1: 'MT_0/bram_AMP_ctrl',   # MT hierarchy 1 amplitude
-    2: 'MT_1/bram_AMP_ctrl',   # MT hierarchy 2 amplitude
-    3: 'MT_2/bram_AMP_ctrl',   # MT hierarchy 3 amplitude
-    4: 'MT_3/bram_AMP_ctrl',   # MT hierarchy 4 amplitude
+    1: 'MT_0/bram_AMP_ctrl',
+    2: 'MT_1/bram_AMP_ctrl',
 }
 
 _VALID_CHANNELS = (1, 2, 3, 4)
