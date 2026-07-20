@@ -8,11 +8,13 @@ This repository contains the FPGA firmware, build scripts, hardware exports, and
 
 ```
 FPGAPlatformController/
-├── PYNQ_code/             Python/PYNQ software for controlling the platform
-├── projectHW_wMT_build/   Vivado build script — Multi-Tone (MT) design
-├── projectHW_ADC_build/   Vivado build script — ADC input design
-├── xsa/                   Exported hardware (.xsa) for PYNQ overlay loading
-└── docs/                  Block design schematics (PDF)
+├── PYNQ/                  Python/PYNQ software and exported hardware (.xsa) files
+├── VIVADO- PROJECT BUILDER SCRIPT/
+│   ├── DAC1ST_DAC2MT_build/     Vivado build script — Multi-Tone (MT) design
+│   └── projectHW_ADC_build/     Vivado build script — ADC input design
+├── ALTIUM- UPDATED PCB DESIGN/  PCB schematics and layouts
+├── DATASHEETS AND DOCUMENTS/    Hardware datasheets and documentation
+└── docs/                        Block design diagrams (PNG/PDF)
 ```
 
 ---
@@ -37,28 +39,32 @@ Both designs target the **Avnet MicroZed with Zynq xc7z020clg400-1** and require
 
 ### Multi-Tone design
 ```
-cd projectHW_wMT_build
+cd VIVADO- PROJECT BUILDER SCRIPT/DAC1ST_DAC2MT_build
 build.bat
 ```
 
 ### ADC input design
 ```
-cd projectHW_ADC_build
+cd VIVADO- PROJECT BUILDER SCRIPT/projectHW_ADC_build
 build.bat
 ```
 
-After the script completes, open `projectHW/projectHW.xpr` in Vivado and click **Generate Bitstream**.
+After the script completes, open `projectHW/projectHW.xpr` in Vivado. Then:
+1. Open the **Block Design**
+2. Right-click on the block design and select **Create HDL Wrapper**
+3. Set the wrapper as top module
+4. Click **Generate Bitstream**
 
 ---
 
 ## PYNQ Software
 
-See [`PYNQ_code/README.md`](PYNQ_code/README.md) for board setup and software usage instructions.
+See [`PYNQ/README.md`](PYNQ/README.md) for board setup and software usage instructions.
 
 ---
 
 ## Hardware Exports
 
-The `xsa/` folder contains the exported hardware description files for use with the PYNQ framework:
-- `projectHW_wMT.xsa` — Multi-Tone design
-- `projectHW_wADC.xsa` — ADC input design
+The `PYNQ/` folder contains the exported hardware description files for use with the PYNQ framework:
+- `PYNQ/DAC1ST125MHz_DAC2MT125MHz.xsa` — Multi-Tone design
+- `PYNQ/ADC_DAC12ST_DATACLK125MHz.xsa` — ADC input design
