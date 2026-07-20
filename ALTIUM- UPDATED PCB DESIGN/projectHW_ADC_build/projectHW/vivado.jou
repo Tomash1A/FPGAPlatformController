@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Jul 19 15:47:58 2026
+# Process ID: 55436
+# Current directory: C:/Users/shtomer/WIS_work/WIP/build_Test/projectHW_ADC_build/projectHW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent75692 C:\Users\shtomer\WIS_work\WIP\build_Test\projectHW_ADC_build\projectHW\projectHW.xpr
+# Log file: C:/Users/shtomer/WIS_work/WIP/build_Test/projectHW_ADC_build/projectHW/vivado.log
+# Journal file: C:/Users/shtomer/WIS_work/WIP/build_Test/projectHW_ADC_build/projectHW\vivado.jou
+# Running On: CS-RO-PC29, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 68373 MB
+#-----------------------------------------------------------
+start_gui

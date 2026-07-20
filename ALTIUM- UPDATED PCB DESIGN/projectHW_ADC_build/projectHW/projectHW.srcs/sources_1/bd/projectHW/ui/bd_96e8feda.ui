@@ -1,0 +1,53 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.06239",
+   "Default View_TopLeft":"-30,127",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -20 -y 60 -defaultsOSRD
+preplace port S_AXI1 -pg 1 -lvl 0 -x -20 -y 220 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -20 -y 100 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -20 -y 40 -defaultsOSRD
+preplace portBus m_axis_data_tdata -pg 1 -lvl 5 -x 1340 -y 180 -defaultsOSRD
+preplace portBus clk_div2 -pg 1 -lvl 5 -x 1340 -y 370 -defaultsOSRD
+preplace portBus clk_div16 -pg 1 -lvl 5 -x 1340 -y 670 -defaultsOSRD
+preplace inst DDS_CTRL_AB -pg 1 -lvl 1 -x 170 -y 80 -defaultsOSRD
+preplace inst CH_AB -pg 1 -lvl 3 -x 790 -y 180 -defaultsOSRD
+preplace inst clk_div2 -pg 1 -lvl 1 -x 170 -y 370 -defaultsOSRD
+preplace inst CH_CD -pg 1 -lvl 3 -x 790 -y 460 -defaultsOSRD
+preplace inst INTERLEAVE_0 -pg 1 -lvl 4 -x 1160 -y 290 -defaultsOSRD
+preplace inst DDS_CTRL_CD -pg 1 -lvl 1 -x 170 -y 240 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 430 -y 100 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 2 -x 430 -y 240 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 170 -y 470 -defaultsOSRD
+preplace inst clk_div4 -pg 1 -lvl 1 -x 170 -y 570 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 2 -x 430 -y 530 -defaultsOSRD
+preplace inst clk_div16 -pg 1 -lvl 1 -x 170 -y 670 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -x 430 -y 680 -defaultsOSRD
+preplace netloc CH_CD_m_axis_data_tdata 1 3 1 990 310n
+preplace netloc DDS_CTRL_CD_gpio2_io_o 1 1 1 310 250n
+preplace netloc DDS_CTRL_CD_gpio_io_o 1 1 1 N 230
+preplace netloc DDS_CTRL_gpio2_io_o 1 1 1 N 110
+preplace netloc INTERLEAVE_0_DATA_out 1 4 1 1290 180n
+preplace netloc Net 1 0 1 0 40n
+preplace netloc S00_ARESETN_1 1 0 1 20J 100n
+preplace netloc clk_div16_Q 1 1 1 310 670n
+preplace netloc clk_div2_Q 1 1 4 NJ 370 NJ 370 NJ 370 N
+preplace netloc clk_div4_Q 1 1 1 310 530n
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 1 990J 190n
+preplace netloc dds_config_ctrl_0_tdata 1 1 1 310 70n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 1 10 20n
+preplace netloc xlconcat_0_dout 1 2 1 550 100n
+preplace netloc xlconcat_1_dout 1 2 1 530 240n
+preplace netloc xlconstant_0_dout 1 1 2 NJ 470 540
+preplace netloc xlslice_0_Dout 1 2 2 550J 270 NJ
+preplace netloc xlslice_1_Dout 1 2 3 NJ 680 NJ 680 1290
+preplace netloc Conn1 1 0 1 N 220
+preplace netloc axi_interconnect_0_M00_AXI 1 0 1 NJ 60
+levelinfo -pg 1 -20 170 430 790 1160 1340
+pagesize -pg 1 -db -bbox -sgen -160 -50 1540 740
+"
+}
+0

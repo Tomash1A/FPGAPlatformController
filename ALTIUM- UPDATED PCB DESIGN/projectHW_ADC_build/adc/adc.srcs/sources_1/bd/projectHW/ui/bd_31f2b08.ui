@@ -1,0 +1,88 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.659612",
+   "Default View_TopLeft":"-124,-168",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DAC1_DATACLK -pg 1 -lvl 5 -x 2590 -y 320 -defaultsOSRD
+preplace port DAC2_DATACLK -pg 1 -lvl 5 -x 2590 -y 480 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 2590 -y 730 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 2590 -y 750 -defaultsOSRD
+preplace port FPGA_CLK -pg 1 -lvl 0 -x -20 -y 230 -defaultsOSRD
+preplace port SYNC -pg 1 -lvl 5 -x 2590 -y 20 -defaultsOSRD
+preplace portBus DAC1_DATA_n -pg 1 -lvl 5 -x 2590 -y 360 -defaultsOSRD
+preplace portBus DAC1_DATA_p -pg 1 -lvl 5 -x 2590 -y 340 -defaultsOSRD
+preplace portBus DAC2_DATA_n -pg 1 -lvl 5 -x 2590 -y 520 -defaultsOSRD
+preplace portBus DAC2_DATA_p -pg 1 -lvl 5 -x 2590 -y 500 -defaultsOSRD
+preplace inst DAC1_BUF_OUT -pg 1 -lvl 4 -x 2371 -y 340 -defaultsOSRD
+preplace inst DAC2_BUF_OUT -pg 1 -lvl 4 -x 2371 -y 500 -defaultsOSRD
+preplace inst FPGA_CLK_BUF -pg 1 -lvl 1 -x 210 -y 230 -defaultsOSRD
+preplace inst ST_0 -pg 1 -lvl 3 -x 1121 -y -18 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 720 -y 610 -defaultsOSRD
+preplace inst ila_1 -pg 1 -lvl 4 -x 2371 -y 130 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 210 -y 570 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 790 -defaultsOSRD
+preplace inst ST_0|DDS_CTRL_AB -pg 1 -lvl 2 -x 1411 -y -38 -defaultsOSRD
+preplace inst ST_0|dds_compiler_0 -pg 1 -lvl 2 -x 1411 -y 692 -defaultsOSRD
+preplace inst ST_0|xlconcat_0 -pg 1 -lvl 3 -x 1781 -y -18 -defaultsOSRD
+preplace inst ST_0|DDS_CTRL_CD -pg 1 -lvl 2 -x 1411 -y 122 -defaultsOSRD
+preplace inst ST_0|xlconcat_1 -pg 1 -lvl 3 -x 1781 -y 122 -defaultsOSRD
+preplace inst ST_0|xlconstant_0 -pg 1 -lvl 1 -x 1111 -y 522 -defaultsOSRD
+preplace inst ST_0|clkdivider_src -pg 1 -lvl 1 -x 1111 -y 232 -defaultsOSRD
+preplace inst ST_0|clkdiv2 -pg 1 -lvl 3 -x 1781 -y 232 -defaultsOSRD
+preplace inst ST_0|clkdiv4 -pg 1 -lvl 2 -x 1411 -y 362 -defaultsOSRD
+preplace inst ST_0|dds_compiler_1 -pg 1 -lvl 2 -x 1411 -y 512 -defaultsOSRD
+preplace inst ST_0|interleave_0 -pg 1 -lvl 3 -x 1781 -y 522 -defaultsOSRD
+preplace netloc DAC1_BUF_OUT_data_out_to_pins_n 1 4 1 NJ 360
+preplace netloc DAC1_BUF_OUT_data_out_to_pins_p 1 4 1 NJ 340
+preplace netloc DAC2_BUF_OUT_data_out_to_pins_n 1 4 1 NJ 520
+preplace netloc DAC2_BUF_OUT_data_out_to_pins_p 1 4 1 NJ 500
+preplace netloc S00_ARESETN_1 1 1 2 460 142 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 1 1 410 570n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 0 470 440 122 N
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 3 420 862 NJ 862 2140
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 10 670 410
+preplace netloc ST_0_clkdiv2 1 3 1 2180 150n
+preplace netloc ST_0_clkdiv4 1 3 1 2120 170n
+preplace netloc ST_0_m_axis_data_tvalid 1 3 1 2110 130n
+preplace netloc ST_0_cd_word 1 3 1 2100 90n
+preplace netloc ST_0_ab_word 1 3 1 2090 70n
+preplace netloc ST_0_DATA_out 1 3 1 2130 110n
+preplace netloc ST_0_m_axis_data_tdata 1 3 1 2150 190n
+preplace netloc ST_0_m_axis_data_tdata1 1 3 1 2160 210n
+preplace netloc FPGA_CLK_BUF_IBUF_OUT 1 1 2 450 232 NJ
+preplace netloc DAC1_BUF_OUT_diff_clk_to_pins 1 4 1 NJ 320
+preplace netloc DAC2_BUF_OUT_diff_clk_to_pins 1 4 1 NJ 480
+preplace netloc FPGA_CLK_1 1 0 1 NJ 230
+preplace netloc S00_AXI_1 1 1 1 450 530n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 870 -58n
+preplace netloc processing_system7_0_DDR 1 1 4 430J 842 NJ 842 2170J 730 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 750 870J 852 2180J 750 NJ
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 880 102n
+preplace netloc ST_0|S00_ARESETN_1 1 0 2 NJ 142 1211
+preplace netloc ST_0|processing_system7_0_FCLK_CLK0 1 0 2 NJ 122 1191
+preplace netloc ST_0|DAC2_CTRL_gpio_io_o 1 2 1 1621 -48n
+preplace netloc ST_0|DAC2_CTRL_gpio2_io_o 1 2 1 N -8
+preplace netloc ST_0|DDS_CTRL_AB1_gpio_io_o 1 2 1 N 112
+preplace netloc ST_0|DDS_CTRL_AB1_gpio2_io_o 1 2 1 1621 132n
+preplace netloc ST_0|xlconcat_0_dout 1 1 3 1211 602 1611J 412 1931
+preplace netloc ST_0|xlconstant_0_dout 1 1 1 1191 522n
+preplace netloc ST_0|clk_1 1 0 1 NJ 232
+preplace netloc ST_0|clkdivider_src_Q 1 1 2 1191 232 NJ
+preplace netloc ST_0|clkdiv4_Dout 1 1 3 1201 782 1621 292 NJ
+preplace netloc ST_0|xlconcat_1_dout 1 1 3 1211 422 NJ 422 1921
+preplace netloc ST_0|clkdiv2_Dout 1 3 1 NJ 232
+preplace netloc ST_0|dds_compiler_0_m_axis_data_tdata 1 2 2 1651 812 NJ
+preplace netloc ST_0|dds_compiler_1_m_axis_data_tdata 1 2 2 1641 442 1911J
+preplace netloc ST_0|dds_compiler_0_m_axis_data_tvalid 1 2 2 1631 432 NJ
+preplace netloc ST_0|interleave_0_DATA_out 1 3 1 N 522
+preplace netloc ST_0|axi_interconnect_0_M00_AXI 1 0 2 NJ -58 N
+preplace netloc ST_0|S_AXI_1_1 1 0 2 NJ 102 N
+levelinfo -pg 1 -20 210 720 1121 2371 2590
+levelinfo -hier ST_0 * 1111 1411 1781 *
+pagesize -pg 1 -db -bbox -sgen -150 -150 2770 1510
+pagesize -hier ST_0 -db -bbox -sgen 1001 -118 1961 822
+"
+}
+

@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"3.53553",
+   "Default View_TopLeft":"-505,121",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -250 -y 90 -defaultsOSRD
+preplace port S_AXI_1 -pg 1 -lvl 0 -x -250 -y 230 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x -250 -y 30 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x -250 -y 130 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -250 -y 180 -defaultsOSRD
+preplace port port-id_m_axis_data_tvalid -pg 1 -lvl 5 -x 1050 -y 150 -defaultsOSRD
+preplace portBus clkdiv2 -pg 1 -lvl 5 -x 1050 -y 370 -defaultsOSRD
+preplace portBus clkdiv4 -pg 1 -lvl 5 -x 1050 -y 470 -defaultsOSRD
+preplace portBus cd_word -pg 1 -lvl 5 -x 1050 -y 220 -defaultsOSRD
+preplace portBus ab_word -pg 1 -lvl 5 -x 1050 -y 40 -defaultsOSRD
+preplace portBus DATA_out -pg 1 -lvl 5 -x 1050 -y 190 -defaultsOSRD
+preplace portBus m_axis_data_tdata -pg 1 -lvl 5 -x 1050 -y 90 -defaultsOSRD
+preplace portBus m_axis_data_tdata1 -pg 1 -lvl 5 -x 1050 -y 70 -defaultsOSRD
+preplace inst DDS_CTRL_AB -pg 1 -lvl 1 -x -60 -y 110 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 3 -x 520 -y 130 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 190 -y 40 -defaultsOSRD
+preplace inst DDS_CTRL_CD -pg 1 -lvl 1 -x -60 -y 270 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 2 -x 190 -y 260 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 190 -y 150 -defaultsOSRD
+preplace inst clkdivider_src -pg 1 -lvl 1 -x -60 -y 400 -defaultsOSRD
+preplace inst clkdiv2 -pg 1 -lvl 2 -x 190 -y 370 -defaultsOSRD
+preplace inst clkdiv4 -pg 1 -lvl 2 -x 190 -y 470 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 3 -x 520 -y 370 -defaultsOSRD
+preplace inst interleave_0 -pg 1 -lvl 4 -x 880 -y 190 -defaultsOSRD
+preplace netloc S00_ARESETN_1 1 0 1 -200J 130n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 1 -210 30n
+preplace netloc DAC2_CTRL_gpio_io_o 1 1 1 80 30n
+preplace netloc DAC2_CTRL_gpio2_io_o 1 1 1 90 50n
+preplace netloc DDS_CTRL_AB1_gpio_io_o 1 1 1 80 250n
+preplace netloc DDS_CTRL_AB1_gpio2_io_o 1 1 1 90 270n
+preplace netloc xlconcat_0_dout 1 2 3 320 40 N 40 N
+preplace netloc xlconstant_0_dout 1 2 1 320 140n
+preplace netloc clk_1 1 0 1 -230J 180n
+preplace netloc clkdivider_src_Q 1 1 1 80 370n
+preplace netloc clkdiv4_Dout 1 2 3 300 30 740 100 1020
+preplace netloc xlconcat_1_dout 1 2 3 310 270 N 270 1030
+preplace netloc clkdiv2_Dout 1 2 3 290J 460 740 370 N
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 2 750 70 N
+preplace netloc dds_compiler_1_m_axis_data_tdata 1 3 2 720 90 N
+preplace netloc dds_compiler_0_m_axis_data_tvalid 1 3 2 730 110 1010J
+preplace netloc interleave_0_DATA_out 1 4 1 N 190
+preplace netloc axi_interconnect_0_M00_AXI 1 0 1 NJ 90
+preplace netloc S_AXI_1_1 1 0 1 -220 230n
+levelinfo -pg 1 -250 -60 190 520 880 1050
+pagesize -pg 1 -db -bbox -sgen -390 -90 1260 530
+"
+}
+

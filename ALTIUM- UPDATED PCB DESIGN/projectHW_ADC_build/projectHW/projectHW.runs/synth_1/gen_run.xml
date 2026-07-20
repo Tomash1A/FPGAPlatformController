@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1784467116">
+  <File Type="PA-TCL" Name="projectHW_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="projectHW_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="projectHW_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="projectHW_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="projectHW_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="projectHW_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="projectHW_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="projectHW_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="projectHW_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/INTERLEAVE.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/projectHW/projectHW.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/projectHW/hdl/projectHW_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/dds_config_ctrl.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/adc_capture.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/Adder16.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/addr_control.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/amp_controller.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/interp4.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/MT_interlace.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../src/simple_interleave.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="projectHW_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../constrs/REV.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../constrs/REV.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_DAC1_BUF_OUT_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_DDS_CTRL_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_selectio_wiz_ADCDATA_13to10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_DAC2_BUF_OUT_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_c_counter_binary_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_dds_compiler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_selectio_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_selectio_wiz_ADCDATA_9to6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_INTERLEAVE_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_DAC2_CTRL_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_CH_AB_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_clk_div2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_clk_div4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="projectHW_processing_system7_0_0"/>
+</GenRun>

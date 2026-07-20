@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log projectHW_DAC2_CTRL_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source projectHW_DAC2_CTRL_0.tcl
+
